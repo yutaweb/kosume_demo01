@@ -1,1 +1,8 @@
-{{ content_for_index }}
+<!-- /templates/index.liquid -->
+
+<!-- css -->
+{{ 'upper.css' | asset_url | stylesheet_tag }}
+
+<div class="index-sections" data-sections-wrapper>
+  {{ content_for_index }}
+</div>
